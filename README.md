@@ -44,17 +44,15 @@ sudo vi tomcat-users.xml
 
 
 Add the following line at the end (2nd-last line) of the file:
-   <user username="admin" password="admin1234" roles="admin-gui, manager-gui"/>
-   ```
+ ```<user username="admin" password="admin1234" roles="admin-gui, manager-gui"/>```
+
 6. Create symbolic links for starting and stopping Tomcat:
    ```
    sudo ln -s /opt/apache-tomcat-9.0.65/bin/startup.sh /usr/bin/startTomcat
    sudo ln -s /opt/apache-tomcat-9.0.65/bin/shutdown.sh /usr/bin/stopTomcat
    ```
 7. Edit the context.xml files for the Manager and Host Manager applications:
-   ```
-   sudo vi /opt/apache-tomcat-9.0.65/webapps/manager/META-INF/context.xml
-   ```
+   ```sudo vi /opt/apache-tomcat-9.0.65/webapps/manager/META-INF/context.xml```
    Comment out the following line by adding `<!--` at the beginning and `-->` at the end:
    ```
    <!-- Valve className="org.apache.catalina.valves.RemoteAddrValve"
