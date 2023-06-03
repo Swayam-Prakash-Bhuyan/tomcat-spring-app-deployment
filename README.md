@@ -115,4 +115,4 @@ By following this guide, you can successfully deploy your Java web application u
 Remember to customize the instructions based on your specific application and deployment requirements.
 
 
-Feel free to use this README file template for your GitHub repository, and m
+Feel free to use this README file template for your GitHub repository
